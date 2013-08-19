@@ -1,4 +1,4 @@
-h1. Demo project for exposing Play! Framework bug.
+h3. Demo project for exposing Play! Framework bug.
 
 Data stored in the flash scope can become persistent.
 
