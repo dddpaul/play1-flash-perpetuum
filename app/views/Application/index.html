@@ -1,0 +1,22 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{if flash.success}
+    <div class="alert-success">
+        ${flash.success}
+    </div>
+#{/if}
+
+#{if flash.error}
+    <div class="alert-error">
+        ${flash.error}
+    </div>
+#{/if}
+
+#{form @add()}
+    <button name="submit" type="submit">Add</button>
+#{/form}
+
+#{form @clearFlash()}
+    <button name="submit" type="submit">Clear flash</button>
+#{/form}
