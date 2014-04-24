@@ -8,6 +8,7 @@
 /lib-src
 /logs
 /modules
+/precompiled
 /test-result
 /tmp
 server.pid

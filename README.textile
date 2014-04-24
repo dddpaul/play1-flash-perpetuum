@@ -1,22 +1,11 @@
-h3. Demo project for exposing Play! Framework bug.
+h3. Demo project for exposing "play-tests":https://github.com/codeborne/play-tests module bug.
 
-Data stored in the flash scope can become persistent.
+Running "play ui-tests" results in "Action not found" error.
 
-The recipe is very simple:
-* first, put something to flash with arbitrary key (i.e. "warning") in interceptor (or index page);
-* second, put success or error message to flash in other action (i.e. "add") and redirect to index page;
-* reload index page for multiple times and see that success and error messages in the flash scope are stored.
-
-Affected framework versions: 1.2.5.1, 1.2.6, 1.2.x-1.2.6-14-g9b5db0e.
-Not affected: 1.2.5.
+Affected framework versions: 1.2.x-1.2.6-82-gea7a14a (latest commit on 2014-04-22).
 
 Tested on these JREs:
-* 1.7.0.25.
+* 1.7.0.55/1.8.0.5.
 
 Tested on these OSes:
-* Centos 5.9 i386 (OpenVZ-virtualized);
 * Ubuntu 12.04 x86_64 (baremetal).
-
-Was not tested on Windows.
-
-Bug is reproduced in DEV or PROD modes both, so you can launch this app with "play test" or "play run --%prod".

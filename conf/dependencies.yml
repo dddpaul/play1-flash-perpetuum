@@ -2,3 +2,11 @@
 
 require:
     - play
+    - play-tests -> tests 2.10
+
+repositories:
+    - play-tests:
+        type: http
+        artifact: http://repo.codeborne.com/[organization]/[module]-[revision].zip
+        contains:
+            - play-tests -> *
