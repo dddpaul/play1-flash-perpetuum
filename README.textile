@@ -1,6 +1,6 @@
 h3. Demo project for exposing "play-tests":https://github.com/codeborne/play-tests module bug.
 
-Running "play ui-tests" results in "Action not found" error.
+Running "play ui-tests" results in "org.hibernate.PropertyAccessException: could not get a field value by reflection getter of models.Message.text" error.
 
 Affected framework versions: 1.2.x-1.2.6-82-gea7a14a (latest commit on 2014-04-22).
 
