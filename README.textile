@@ -2,7 +2,7 @@ h3. Demo project for exposing "play-tests":https://github.com/codeborne/play-tes
 
 Running "play ui-tests" results in "org.hibernate.PropertyAccessException: could not get a field value by reflection getter of models.Message.text" error.
 
-Affected framework versions: 1.2.x-1.2.6-82-gea7a14a (latest commit on 2014-04-22).
+Affected framework versions: 1.3.x-3ba2934 (latest commit on 2014-04-21).
 
 Tested on these JREs:
 * 1.7.0.55/1.8.0.5.
