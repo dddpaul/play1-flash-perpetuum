@@ -2,6 +2,7 @@
 
 require:
     - play
+    - play-docviewer -> docviewer 1.0
     - play-tests -> tests 2.10
 
 repositories:
@@ -10,3 +11,9 @@ repositories:
         artifact: http://repo.codeborne.com/[organization]/[module]-[revision].zip
         contains:
             - play-tests -> *
+
+    - play-local:
+        type: local
+        artifact: /opt/play/modules/[module]/lib/play-[module].jar
+        contains:
+            - play-docviewer -> *
