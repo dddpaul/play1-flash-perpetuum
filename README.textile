@@ -9,3 +9,5 @@ Tested on these JREs:
 
 Tested on these OSes:
 * Ubuntu 12.04 x86_64 (baremetal).
+
+h3. Problem solved - just disable precompiled mode is play-tests' build.gradle for uitest task.
