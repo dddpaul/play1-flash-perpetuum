@@ -3,12 +3,12 @@
 require:
     - play
     - play-docviewer -> docviewer 1.0
-    - play-tests -> tests 2.10
+    - play-tests -> tests 2.11
 
 repositories:
-    - play-tests:
-        type: http
-        artifact: http://repo.codeborne.com/[organization]/[module]-[revision].zip
+    - reic-play:
+        type:       http
+        artifact:   http://repo.reic.ru/repo/play-[module]/dist/[module]-[revision].zip
         contains:
             - play-tests -> *
 
